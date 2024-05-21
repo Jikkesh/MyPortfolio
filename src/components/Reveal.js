@@ -13,21 +13,21 @@ function Reveal({ children, width = "100%" }) {
             mainControlls.start("visible")
         }
 
-    }, [isInView])
+    }, [isInView, mainControlls])
 
     return (
         <div ref={ref}  >
-         <motion.div 
-         variants={{
-            hidden: {opacity: 0 , y : 70},
-            visible : {opacity : 1 , y : 0} 
-         }}
-         initial = "hidden"
-         animate = {mainControlls}
-         transition={{duration : 0.75 , delay : 0.30}}
-         >
-         {children}
-         </motion.div>
+            <motion.div
+                variants={{
+                    hidden: { opacity: 0, y: 70 },
+                    visible: { opacity: 1, y: 0 }
+                }}
+                initial="hidden"
+                animate={mainControlls}
+                transition={{ duration: 0.75, delay: 0.30 }}
+            >
+                {children}
+            </motion.div>
         </div>
 
     )
