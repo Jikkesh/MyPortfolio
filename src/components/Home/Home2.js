@@ -106,13 +106,7 @@ function Home2() {
             </Col>
           </Row>
         </Reveal>
-      </Container>
-      <div style={{ marginTop: "100px" }}>
-        <h5 style={{ color: "white" }}>Built on top of</h5>
-        <a href="https://github.com/soumyajit4419/Portfolio" rel="noreferrer" target="_blank">
-          Soumyajit <AiFillGithub />
-        </a> </div>
-    </Container>
+    
   );
 }
 export default Home2;
